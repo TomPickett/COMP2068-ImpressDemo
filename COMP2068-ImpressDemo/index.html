@@ -5,12 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COMP2068 - Impress Demo</title>
     <!-- CSS Section-->
+    <link href="css/reset.css" rel="stylesheet" />
     <link href="css/Game.css" rel="stylesheet" />
 </head>
-<body>
+<body onload="main();">
+
+    <div id="impress">
+        <!-- SLide One -->
+        <div id="1" class="=step slide">
+            <div class="slide text">
+                <p>There's a switch over there, flip the switch?</p>
+                <p><a href="#2">FLIP</a> it. </p>
+                <p><a href="#3">WIAT</a> for your dad, who is a scientist, to come home.</p>
+            </div>
+        </div>
+
+        <!-- SLide Two -->
+        <div id="2" class="=step slide" data-x="1500">
+            <div class="slide text">
+                <p>You went back in time, it was fun!</p>
+                <div class="menu"><a href="#1">Start Over</a></div>
+            </div>
+        </div>
+
+        <!-- SLide Three -->
+        <div id="3" class="=step slide" data-x="-1500">
+            <div class="slide text">
+                <p>You dad came home and he didnt let you use the time machine.</p>
+                <p>You got bored!</p>
+                <div class="menu"><a href="#1">Start Over</a></div>
+            </div>
+        </div>
+
+
+    </div>
 
 
     <!-- Java Script Section-->
+    <script src="Scripts/lib/impress.js"></script>
     <script src="Scripts/game.js"></script>
 </body>
 </html>
